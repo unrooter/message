@@ -7,7 +7,6 @@
     <meta name="_token" content="{{ csrf_token() }}"/>
     <title>Laravel</title>
     <link href="//cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
         .container{
             margin-top: 2em;
@@ -23,13 +22,13 @@
             padding: 1em 0;
         }
         .txt:nth-child(3n){
-            background-color: blue;
-        }
-        .txt:nth-child(3n+1){
             background-color: red;
         }
+        .txt:nth-child(3n+1){
+            background-color:#fff;
+        }
         .txt:nth-child(3n+2){
-            background-color: #fff;
+            background-color: blue;
         }
         .pagelist{
             height: 50px;;
@@ -47,6 +46,9 @@
             border:1px solid #4a2f10;
             padding: 2px 5px;
             font-size: 13px;
+        }
+        .pageNum:hover{
+            background-color: #2ca02c;
         }
         h4{
             margin-top: 2em;
